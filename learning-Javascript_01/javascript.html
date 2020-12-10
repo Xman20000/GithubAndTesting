@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<h1 id="shit">Type some shit</h1>
+	<h2>SO HOW TRUMP ARE YOU???</h2>
+	<input type="number" id="txtTrump">
+	<button id="Trump-ets">
+		Trump toots
+	</button>
+	<script>
+		// let ace = "truthful";
+		// let perfect = 100;
+		// console.log("banana","Bewmnana");
+
+		// let isSergalCheese = true;
+		// if (isSergalCheese){
+		//     console.log("You are made of cheese!")
+		// } else {
+		//     alert("ARRRRRRRRRRRRRRRRGH I NEED A MEDIC BAG")
+		// };
+		
+		// let age = prompt("How old are ye lassie?");
+		// if (age>=18){
+		//     console.log("You are fit to ride!!!")
+		// } else {
+		//     alert("HOLY SHIT GET OFF THIS SITE it's bad for your eyes.")
+		// };
+
+		const elShit = document.querySelector("#shit");
+		elShit.textContent="Oh cool! i could dynamically change the text :Ooooooooooooooooooooo";
+		elShit.style.color = "orange";
+		elShit.style.background = "blue";
+		// elShit.remove();
+		document.body.appendChild(elShit.cloneNode(true));
+		
+		const iCanSee = document.createElement("img");
+		iCanSee.src = "https://media3.giphy.com/media/YoVHzKrth9Rv00DmTB/giphy.gif";
+		document.body.appendChild(iCanSee);
+	
+		const audTrump = document.createElement("audio");
+		audTrump.src = "Fart.mp3";
+
+		
+		const btnTrump = document.querySelector("#Trump-ets");
+
+		const txtTrump = document.querySelector("#txtTrump");
+
+		btnTrump.addEventListener("click",function () {
+			console.log("I work")
+			for(let num = 0; num < txtTrump.value; num++) {
+				toot();
+			}
+		});
+		// Body
+		function toot() {
+			// alert("toot toot");
+			document.body.appendChild(iCanSee.cloneNode(true));
+			document.body.appendChild(audTrump);
+		}
+		
+
+		
+	</script>
+</body>
+</html>
