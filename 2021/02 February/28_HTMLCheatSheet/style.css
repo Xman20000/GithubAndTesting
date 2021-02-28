@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+* {
+    font-family: "Noto Serif";
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    background-color: black;
+    color: white;
+}
+
+/* The header of each block */
+.header {
+    width: 80%;
+    margin: 100px auto;
+    background-color: gray;
+    color: black;
+    text-align: center;
+    padding: 3px 0px;
+}
+
+/* The body of each block */
+.body {
+    background-color: darkgray;
+    text-align: center;
+    padding: 2px 25px;
+}
+
+/* Highlights specifically mention inline code such as em or strong */
+.span-element {
+    color: purple;
+    text-decoration: underline;
+}
+
+/* Makes the top text large and crossed out */
+header{
+    width: 90%;
+    margin: 50px auto;
+    font-size: 2em;
+}
+
+#line-through {
+    text-decoration: line-through;
+}
+
+
+/* Inproving list view */
+.lists {
+    margin: 0 auto;
+    padding: 0 30%;
+    text-align: start;
+}
+
+ul {
+    text-align: start;
+    padding: 10px 0;
+}
+
+ol {
+    text-align: start;
+    padding: 10px 0;
+}
+
+/* Inproving Table view */
+table {
+    margin: 0 auto;
+    border: grey 2px solid
+}
+
+tr th {
+    border-bottom: grey 2px solid;
+}
+
+tr td {
+    border-top: grey 2px solid;
+}
+
+/* Inproving form view */
+form {
+    width: 50%;
+    margin: 32px auto;
+    padding: 10px 10px;
+    text-align: start;
+    border: grey 5px solid
+}
+
+form div {
+    padding: 5px 1px;
+}
+
+form input, form textarea, form select {
+    float: right;
+    margin: auto;
+}
+
+form input#submit {
+    margin: 0 auto;
+    float: none;
+}
+
+/* Makes the image small */
+div img {
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+}
+
+/* Widen's the blog to take up the entire screen As well as inprove readability*/
+section.blog > * {
+    text-align: start;
+}
+
+.blog {
+    background-color: gray;
+    color: black;
+}
+
+#blogH1 {
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+section.blog > div.body > section > article {
+    padding: 10px;
+}
+
+section.blog > div.body > footer {
+    text-align: center;
+    font-size: 18px;
+}
+
+/* Literally only makes the "New Html page centered */
+#header {
+    text-align: center;
+}
+
+/* Samsung fold support (which should support all phones)
+    Buttons & links not resized, only readabiliy adjusted */
+@media (max-width: 463px) {
+
+    /* Table is too small to read, but it's all on screen */
+    table {
+        font-size: 0.6em;
+    }
+
+
+    /* Fixed form for phones */
+    form {
+        width: 90%;
+        display: block;
+        align-content: center;
+        text-align: center;
+        padding: 5px 5px;
+        border: grey 5px solid;
+    }
+    
+    form div {
+        padding: 5px 1px;
+    }
+    
+    form input, form textarea, form select {
+        align-content: center;
+        width: 100%;
+    }
+    
+    form input#submit {
+        margin: 0 auto;
+        float: none;
+    }
+
+
+
+}
+
+@media (max-width: 750px) {
+    form {
+        width: 90%;
+        display: block;
+        align-content: center;
+        text-align: center;
+        padding: 5px 5px;
+        border: grey 5px solid;
+    }
+    
+    form div {
+        padding: 5px 1px;
+    }
+    
+    form input, form textarea, form select {
+        align-content: center;
+        width: 100%;
+    }
+    
+    form input#submit {
+        margin: 0 auto;
+        float: none;
+        width: auto;
+        padding: 0 5px;
+    }
+}
