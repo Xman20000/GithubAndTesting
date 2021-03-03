@@ -1,0 +1,55 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    background-color: darkgreen;
+    color: orange;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    margin: 0;
+}
+
+li {
+    flex-basis: 15%;
+    font-size: 1em;
+    margin: 0;
+}
+
+a {
+    color: orange;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+}
+
+#nav-desc {
+    color: white;
+}
+
+@media(max-width:768px) {
+    ul {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    li{
+        margin: 0 auto;
+        /* flex-basis: 100%; */
+        color: red;
+        font-size: 2em;
+    }
+
+    p {
+        margin: 15px 0;
+        padding: 5px 25px;
+        background: darkslategrey;
+        border: greenyellow 2px solid;
+        border-radius: 10px;
+    }
+}
